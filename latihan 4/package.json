@@ -1,0 +1,16 @@
+{
+  "name": "latihan-4",
+  "version": "1.0.0",
+  "description": "belajar NodeJS",
+  "license": "ISC",
+  "author": "jalu dwi p",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "validator": "^13.5.2"
+  }
+}
