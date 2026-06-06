@@ -1,5 +1,6 @@
 const fs = require('fs');
 const readline = require('readline');
+//buat interface input dan output
 const rl = readline.createInterface({
     input: process.stdin,
     output:process.stdout,
@@ -18,6 +19,7 @@ if(!fs.existsSync(dataPath)){
     fs.writeFileSync(dataPath, '[]', 'utf-8');
 }
 
+//fungsi pertanyaan secara promise
 const tulisPertanyaan = (pertanyaan) =>{
     return new Promise((resolve, reject) => {
         rl.question(pertanyaan , (nama) => {
@@ -26,6 +28,7 @@ const tulisPertanyaan = (pertanyaan) =>{
     });
 };
 
+//menyimpan inputan ke data/contacts.json
 const simpanContact = (nama, email, noHP) => {
     const contact ={nama, email, noHP};
     const file = fs.readFileSync("data/contacts.json", 'utf-8');
@@ -36,6 +39,7 @@ const simpanContact = (nama, email, noHP) => {
     rl.close();
 };
 
+//export 
 module.exports = {
     tulisPertanyaan, simpanContact
 }
