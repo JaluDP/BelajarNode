@@ -1,12 +1,1 @@
-[
-    {
-        "nama" : "Jalu Dwi",
-        "nohp" : "08123456789",
-        "email" : "jalu@g.com"
-    },
-    {
-        "nama" : "Purwandana",
-        "nohp" : "08345678912",
-        "email" : "Purwd@g.com"
-    }
-]
+[{"nama":"Jalu Dwi","nohp":"08123456789","email":"jalu@g.com"},{"nama":"Purwandana","nohp":"08345678912","email":"Purwd@g.com"},{"nama":"Didin","email":"Didnt@g.com","nohp":"081234567901"}]
